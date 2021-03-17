@@ -5,11 +5,15 @@ function addALine () {
 	var y0 = document.getElementById("yi").value;
 	var y1 = document.getElementById("yf").value;
 
-	x0 = parseInt(document.getElementById("xi").value);
-	x1 = parseInt(document.getElementById("xf").value);
-	y0 = parseInt(document.getElementById("yi").value);
-	y1 = parseInt(document.getElementById("yf").value);
-	bline(x0,y0,x1,y1);
+  if (x0 != "" && x1 != "" && y0 != "" && y1 != ""){
+    x0 = parseInt(document.getElementById("xi").value);
+    x1 = parseInt(document.getElementById("xf").value);
+    y0 = parseInt(document.getElementById("yi").value);
+    y1 = parseInt(document.getElementById("yf").value);
+    bline(x0,y0,x1,y1);
+  } else {
+    alert("Digite todos valores de dx e dy!");
+  }
 }
 
 function bline(x0, y0, x1, y1) {
