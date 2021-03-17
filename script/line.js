@@ -37,3 +37,15 @@ function bline(x0, y0, x1, y1) {
 function createElement (x,singX,y,singY) { 
 	document.getElementById("box").innerHTML+="<div class=\"pixel\" style=\"left:"+(670+(x*20))+"px;top:"+(330-(y*20))+"px;\"><center><p style=\"font-size:10px;margin-top:-12px\">"+(x)+","+(y)+"</p></center></div>";
 }
+
+function clearer () {
+  var todos_os_pixels=document.getElementsByClassName("pixel");  
+  for(var i = todos_os_pixels.length-1;i>=0;i--){
+    document.getElementsByClassName("pixel")[i].remove();
+  } 
+  /*try{
+    
+  }catch{
+    console.error("Não tem pixels pra limpar");
+  }*/
+} 
