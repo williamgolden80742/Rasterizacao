@@ -42,7 +42,7 @@ function clearer () {
   var todos_os_pixels=document.getElementsByClassName("pixel");  
   for(var i = todos_os_pixels.length-1;i>=0;i--){
     document.getElementsByClassName("pixel")[i].remove();
-  }
+  } 
   /*try{
     
   }catch{
