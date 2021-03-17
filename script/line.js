@@ -5,11 +5,15 @@ function addALine () {
 	var y0 = document.getElementById("yi").value;
 	var y1 = document.getElementById("yf").value;
 
-	x0 = parseInt(document.getElementById("xi").value);
-	x1 = parseInt(document.getElementById("xf").value);
-	y0 = parseInt(document.getElementById("yi").value);
-	y1 = parseInt(document.getElementById("yf").value);
-	bline(x0,y0,x1,y1);
+  if (x0 != "" && x1 != "" && y0 != "" && y1 != ""){
+    x0 = parseInt(document.getElementById("xi").value);
+    x1 = parseInt(document.getElementById("xf").value);
+    y0 = parseInt(document.getElementById("yi").value);
+    y1 = parseInt(document.getElementById("yf").value);
+    bline(x0,y0,x1,y1);
+  } else {
+    alert("Digite todos valores de dx e dy!");
+  }
 }
 
 function bline(x0, y0, x1, y1) {
@@ -31,7 +35,7 @@ function bline(x0, y0, x1, y1) {
 }
 
 function createElement (x,singX,y,singY) { 
-	document.getElementById("box").innerHTML+="<div class=\"pixel\" style=\"left:"+(650+(x*20))+"px;top:"+(310-(y*20))+"px;\"><center><p style=\"font-size:10px\">"+(x)+","+(y)+"</p></center></div>";
+	document.getElementById("box").innerHTML+="<div class=\"pixel\" style=\"left:"+(670+(x*20))+"px;top:"+(330-(y*20))+"px;\"><center><p style=\"font-size:10px;margin-top:-12px\">"+(x)+","+(y)+"</p></center></div>";
 }
 
 function clearer () {

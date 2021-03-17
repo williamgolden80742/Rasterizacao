@@ -6,8 +6,9 @@ body {
 }
 .pixel {
 	position:absolute;
-	margin:20px;
 	background:blue;
-	height:20px;
-	width:20px;
+	background-image:url("../pixel.png");
+	height:18px;
+	width:18px;
+	border: 1px solid white;	
 }
