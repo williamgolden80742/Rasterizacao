@@ -48,4 +48,4 @@ function clearer () {
   }catch{
     console.error("Não tem pixels pra limpar");
   }*/
-}
+} 
