@@ -35,5 +35,5 @@ function bline(x0, y0, x1, y1) {
 }
 
 function createElement (x,singX,y,singY) { 
-	document.getElementById("box").innerHTML+="<div class=\"pixel\" style=\"left:"+(650+(x*20))+"px;top:"+(310-(y*20))+"px;\"><center><p style=\"font-size:10px\">"+(x)+","+(y)+"</p></center></div>";
+	document.getElementById("box").innerHTML+="<div class=\"pixel\" style=\"left:"+(670+(x*20))+"px;top:"+(330-(y*20))+"px;\"><center><p style=\"font-size:10px;margin-top:-12px\">"+(x)+","+(y)+"</p></center></div>";
 }
