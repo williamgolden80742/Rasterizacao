@@ -7,8 +7,12 @@ body {
 .pixel {
 	position:absolute;
 	background:blue;
-	background-image:url("../pixel.png");
 	height:18px;
 	width:18px;
 	border: 1px solid white;	
+}
+p {
+	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+ 	font-size:10px;
+ 	margin-top:5px;
 }
