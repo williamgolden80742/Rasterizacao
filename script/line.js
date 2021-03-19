@@ -16,6 +16,10 @@ function addALine () {
   }
 }
 
+function clear () {
+  document.getElementById("box").innerHTML = "dx <input type=\"number\" id=\"xi\" placeholder=\"x1\"/> <input type=\"number\" id=\"xf\" placeholder=\"x2\"/> <button  onclick=\"clear();\" style=\"color: grey;\">Limpar</button> </br> dy <input type=\"number\" id=\"yi\" placeholder=\"y1\"/> <input type=\"number\" id=\"yf\" placeholder=\"y2\"/> <button  onclick=\"addALine();\" style=\"color: grey;\">OK</button>";
+}
+
 function bline(x0, y0, x1, y1) {
   var dx = Math.abs(x1 - x0), sx = x0 < x1 ? 1 : -1;
   var dy = Math.abs(y1 - y0), sy = y0 < y1 ? 1 : -1; 
